@@ -1,0 +1,35 @@
+buildscript {
+    ext {   //스프링부트 전역 변수 선언
+
+        springBoootVersion = '2.7.5'
+    }
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBoootVersion}")
+    }
+}
+
+//plugins {
+//    id 'java'
+//}
+//
+//group 'com.pigsheep.springbootex'
+//version '1.0-SNAPSHOT'
+//
+//sourceCompatibility = 1.6
+//
+//repositories {
+//    mavenCentral()
+//}
+//
+//dependencies {
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+//}
+//
+//test {
+//    useJUnitPlatform()
+//}
